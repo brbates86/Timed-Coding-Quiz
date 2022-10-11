@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 5px solid rgb(75, 96, 211);
+    font-family: serif;
+    font-weight: 100;
+}
+
+body {
+    background-color: rgb(187, 184, 184);
+}
+
+p {
+    color: azure;
+    font-size: 1em;
+}
+
+
+
+button {
+    outline: auto;
+    background-color:rgb(66, 64, 64);
+    color: aliceblue;
+    font-size: 1em;
+}
+
+h1, h2 {
+    color: aliceblue;
+}
+
+/*-----------*/
+/*Main content*/
+
+.main-container {
+    padding: 15px;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+#info-bar, main {
+    display: none;
+    margin-bottom: 25vh;
+    margin-left: 15%;
+    margin-right: 15%;
+
+}
+
+#info-bar p {
+    float: right;
+}
+
+#inner-container {
+    background-color: rgb(81, 79, 79);
+    opacity: 75%;
+    height: 75vh;
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.start-button {
+    display: block;
+    width: 25%;
+    margin: auto;
+    background-color: rgb(245, 109, 6);
+}
+
+#questions {
+    display: none;
+}
+#questions ol {
+    list-style-type: none;
+
+
+}
+
+.end-of-quiz {
+    display: none;
+}
