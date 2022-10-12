@@ -1,26 +1,29 @@
-var startButton = document.getElementById(".start-button");
-var mainContainer = document.getElementById(".main-container");
-var infoBar = document.getElementById(".info-bar");
-var innerContainer = document.getElementById(".inner-container");
-var quiz = document.getElementById(".quiz");
-var questions = document.getElementById(".questions");
-var endOfQuiz = document.getElementById(".end-of-quiz");
-
+var startButton = document.getElementById("startButton");
+var mainContainer = document.getElementById("mainContainer");
+var infoBar = document.getElementById("infoBar");
+var innerContainer = document.getElementById("innerContainer");
+var quiz = document.getElementById("quiz");
+var questions = document.getElementById("questions");
+var endOfQuiz = document.getElementById("endOfQuiz");
+var timer = document.getElementById("timer");
+var timeLeft = document.getElementById("timeLeft");
+var timesUp = document.getElementById("timesUp");
+var startGame = document.getElementById("startGame");
 var currentQuestionIndex
+var choiceA = document.getElementById(button1);
+var choiceB = document.getElementById(button2);
+var choiceC = document.getElementById(button3);
+var choiceD = document.getElementById(button4);
+var highScore = document.getElementById(highScore);
 
-startButton.addEventListener("click", startGame); {
-    currentQuestionIndex++
-    setNextQuestion()
+
+var totalTime = 30;
+function startQuiz() {
+    questions = 0;
+    totalTime = 30;
+    timeLeft.textContent = totalTime;
+    initialInput.textContent = "";
 }
-function startGame() {
-    quizButton.className.add("hide")
-    randomQuestions = questions.sort(() => Math.random() - .5)
-    currentQuestionIndex = 0
-    questionContainerElement.classList.remove("hide")
-    setNextQuestion()
-}
-
-
 
 var questions = [
     {
@@ -71,3 +74,9 @@ var questions = [
 let timeValue = 10;
 let userScore = 0;
 let counter;
+
+startButton.onclick = ()=>{
+    innerContainer.classList.add(activeInfo);
+}
+
+
