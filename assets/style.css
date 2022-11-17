@@ -32,7 +32,7 @@ h1, h2 {
 /*-----------*/
 /*Main content*/
 
-.main-container {
+#main-container {
     padding: 15px;
     height: 95vh;
     display: flex;
@@ -63,7 +63,7 @@ h1, h2 {
     justify-content: center;
 }
 
-.start-button {
+#start-button {
     display: block;
     width: 25%;
     margin: auto;
@@ -79,6 +79,6 @@ h1, h2 {
 
 }
 
-.end-of-quiz {
+#end-of-quiz {
     display: none;
 }
